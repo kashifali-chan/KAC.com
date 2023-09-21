@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- foter -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .h1{
+    margin-top: 6px;
+    font-family:"lucida Handwriting";
+    font:36px 'Cookie';
+}
+.about_container {
+  max-width: 100%;
+ 
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+ border-radius: 6px;
+ border: 1px solid rgb(168, 161, 161);
+  /* background: linear-gradient(to left,#178b9a  50%,#454646 100%); */
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(76, 75, 75);
+}
+.about_container:hover{
+  box-shadow: 0.1rem 0.rem 0.1rem rgb(255, 255, 255);
+ border: 1px solid rgb(83, 83, 231);
+}
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  font-size: 15px;
+color: #fff;
+
+
+}
+
+.about-content h2 {
+  font-size: 2rem;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: 50vh;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(100, 9, 9, 0.1);
+}
+
+
+
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 767px) {
+  /* Mobile Styles */
+  .about_container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  .about-image img {
+  max-width: 100%;
+  min-width: 200px;
+  height: 32vh;
+
+
+}
+}
+
+/* You can add more media queries as needed for different breakpoints */
+.body{
+    background-image: url(11.jpg);
+    background-size: 100%, 100%;
+    background-repeat:repeat;
+    height:2710px;
+}
+.na{
+  z-index: 1;
+  position: fixed;
+}
+.about{
+  z-index: -1;
+  opacity: 0.9;
+}
+.img{
+margin-right: 26px;
+}
+.footerr{
+          width: 100%;
+          height: 50px;
+          position: fixed;
+          bottom: 0;
+           background-color: rgb(0, 0, 0); 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        color: #fff;
+       
+        }
+        .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 14px;
+    /* margin-bottom: 5px; */
+}
+.footer-icons a:hover {
+    background-color: #3F71EA;
+}
+p{
+  text-overflow: ellipsis;
+}
+.h{
+  color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+</style>
+<body>
+  
+<div class="body">
+   <div class="na">
+    <div class="header-container">
+      <header class="header">
+      <div class="header__section">
+               <img class="ik" src="ca.PNG" alt="">
+      <a href="index.html">
+      <h1 class="h">KAC</h1>
+      </a>
+      </div>
+      <div class="header__section desktop">
+      <nav class="nav">
+      <a class="nav__link" href="index.html">HOME</a>
+      <a class="nav__link" href="mv player.html">MVPlayer</a>
+      <a class="nav__link" href="servise.html">SUBSCRIPTIONS</a>
+      <a class="nav__link" href="titok.html">TIKTOK</a>
+      </nav>
+      </div>
+      <div class="header__section">
+      <button id="open-mini-popup"  class="cta-button desktop">Sign In</button>
+      <button class="bars mobile" id="menuToggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      </button>
+      </div>
+      <div class="menu mobile" id="menu">
+      <nav class="nav">
+      <a class="nav__link" href="index.html">HOME</a>
+      <a class="nav__link" href="mv player.html">MVPlayer</a>
+      <a class="nav__link" href="servise.html">SUBSCRIPTIONS</a>
+      <a class="nav__link" href="titok.html">TIKTOK</a>
+      </nav>
+      </div>
+      </header>
+      </div>
+   </div>
+  <!-- ------ About Section ------- -->
+
+  
+        <div class="about">
+
+            <br>
+            <br>
+            <br>
+            <br>
+             <div class="about">
+               <link rel="stylesheet" href="about.css">
+
+
+               <section class="about">
+                <div class="about_container">
+                
+                
+            
+                  <div class="about-content">
+                    <h2>ABOUT SERVICES</h2>
+                    <p>The platform acts as a dynamic catalyst, enabling users to enhance their online presence across various social media networks.
+                      By leveraging this website, users can employ diverse strategies to promote their social media profiles
+                      It offers a multifaceted approach, encompassing tactics for platforms like Facebook, Instagram, Twitter, TikTok, and more.
+                      Ultimately, this platform empowers individuals to navigate the digital sphere with confidence, fostering growth and success.
+                      It stands as a beacon for those seeking to harness the power of social media for personal or professional advancement, offering a wealth of opportunities to shine online.
+                    </p>
+                  </div>
+                 
+                </div>
+              </section>
+
+
+
+
+               <section class="about">
+                <div class="about_container">
+                  <div class="about-content">
+                    <h2>SUBSCRIBERS</h2>
+                    <p>
+                      You can get subscribers for free by helping each other.It operates on a mutual-help principle, meaning users can increase their subscriber count by assisting each other.
+                      This creates a cooperative ecosystem where content creators support one another's growth.
+                      Additionally, for those who prefer not to engage in mutual support, the website offers an alternative option.
+Users can purchase subscribers for their channels at an affordable price.
+                    </p>
+                  </div>
+                  <div class="about-image">
+                    <img src="yo (9).jpg" alt="Company Image">
+                   
+                  </div>
+                </div>
+              </section>
+            
+            
+            
+              <section class="about">
+                <div class="about_container">
+                
+                
+            
+                  <div class="about-content">
+                    <h2>WATCH TIME</h2>
+                    <p>Here you can complete your  watch time in a very short time by helping each other.
+                      It promotes a virtuous cycle of mutual assistance, where users support each other by watching each other's videos.
+                      if you don't want to watch other's channel videos, you can also buy watch time at a very low price.
+                    </p>
+                  </div>
+                  <div class="about-image">
+                    <img src="yo (14).jpg" alt="Company Image">
+                   
+                  </div>
+                </div>
+              </section>
+
+
+              <section class="about">
+                <div class="about_container">
+                  <div class="about-content">
+                    <h2>TIKTOK LIKES</h2>
+                    <p>Here you can get TikTok likes for free by helping each other.
+                      This collaborative method encourages organic growth and engagement on the TikTok platform.
+                      Users have the option to purchase TikTok likes at an exceptionally affordable rate.
+                      The website underscores the importance of transparent and ethical practices in all interactions
+                    </p>
+                  </div>
+                  <div class="about-image">
+                    <img src="like.png" alt="Company Image">
+                   
+                  </div>
+                </div>
+              </section>
+
+
+              <section class="about">
+                <div class="about_container">
+                
+                  
+            
+                  <div class="about-content">
+                    <h2>TIKTOK FOLLOWERS</h2>
+                    <p>The platform promotes an atmosphere of camaraderie where TikTok users can boost their follower count organically.
+                      This is achieved by reciprocally following each other's TikTok accounts, fostering a supportive and connected community.
+
+It's a testament to the power of unity and shared goals in the digital age
+
+                    </p>
+                  </div>
+                  <div class="about-image">
+                    <img src="follower.jfif" alt="Company Image">
+                   
+                  </div>
+                </div>
+              </section>
+
+
+
+              <section class="about">
+                <div class="about_container">
+                  <div class="about-content">
+                    <h2>ABOUT ME</h2>
+                    <p>
+                     
+                            Assalamualaikum, i'm
+                            <h3>KASHIF ALI</h3>
+                           Student of BS Software Engineer
+                      <br>
+                      <i class="fa-solid fa-phone"></i>03477599946
+                    </p>
+
+
+                  </div>
+                  <div class="about-image">
+                    <img src="kk.png" alt="Company Image">
+                   
+                  </div>
+                </div>
+              </section>
+
+
+            </div>
+               </div>
+     </div>
+        <!-- Mini Popup container -->
+    <div id="mini-popup" class="mini-popup-container">
+      <!-- Close button -->
+      <span class="close-button" id="close-mini-popup">&times;</span>
+      <!-- Mini Popup content -->
+      <h2>Coming soon</h2>
+  </div>
+  
+  <div class="footerr">
+    <div class="footer-icons">
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://chat.whatsapp.com/IIxwXKZNOY3JkvhjucfwU6"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.tiktok.com/@kashifali7599946?_r=1&_d=e60jl69i4h6i11&sec_uid=MS4wLjABAAAA5pqqNDcqqCOR72WfgbM9Kcw8cBdOjvGgrLTfslTqWUcnuSVHEqaji3JBjoDL6DpV&share_author_id=7188823389313598469&sharer_language=en&source=h5_m&u_code=e60jll0l83h2h2&timestamp=1695217519&user_id=7188823389313598469&sec_user_id=MS4wLjABAAAA5pqqNDcqqCOR72WfgbM9Kcw8cBdOjvGgrLTfslTqWUcnuSVHEqaji3JBjoDL6DpV&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7230899748231202565&share_link_id=3efab193-08a1-4c6a-91c8-423bb34084ea&share_app_id=1233&ugbiz_name=Account&ug_btm=b8727%2Cb4907"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/channel/UCcunqkCK1Rpllg8v5FWqdrA"><i class="fa-brands fa-youtube"></i></a>
+   </div>
+    </div>
+        <script src="index.js"></script>    
+     
+</body>
+</html>
+

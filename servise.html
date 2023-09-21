@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAC</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <!-- foter -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+rel="stylesheet"
+        />
+        <script src="https://apis.google.com/js/platform.js"></script>
+<style>
+  body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    margin: 10px;
+  }
+  .service-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+   
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 170px;
+    box-sizing: border-box;
+  }
+  .service-box h3 {
+    margin-top: 0;
+  }
+
+            
+            #sidebar {
+                height: 100%;
+                opacity: 0.9;
+                width: 0;
+                position: absolute;
+                top: 46px;
+                left: 0;
+                background-color: #000000;
+                padding-top: 60px;
+                z-index: 1;
+                overflow-x: hidden;
+                transition: 0.5s;
+                border-right: 1px solid rgb(212, 208, 208);
+            }
+            
+            #sidebar ul {
+                list-style-type: none;
+                padding: 0;
+              margin-top: 50px;
+            }
+            
+            #sidebar li {
+                padding: 8px;
+                color: white;
+            }
+            
+            #sidebar a {
+                text-decoration: none;
+                color: rgb(3, 3, 3);
+                display: block;
+                transition: 0.3s;
+            }
+            
+            #sidebar a:hover {
+                color: #3d2f2f;
+            }
+            
+            #sidebar .close-btn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+                cursor: pointer;
+                color: #fff;
+            }
+            #sidebar .close-btn:hover{
+            color: #685ddc;
+            }
+            #openNav {
+                font-size: 30px;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 3px;
+                color: #f4f4f4;
+            }
+             #openNav:hover{
+            color: rgb(176, 159, 251);
+             }
+      
+             .logo {
+    color: rgb(28, 28, 180);
+    width:90px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    margin-bottom: 250px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgb(212, 212, 236), white 90%);
+}
+.navbar{
+position: relative;
+text-align: center;
+background-color: rgb(0, 0, 0);
+height: 46px;
+color: #ddd;
+ box-sizing: border-box; 
+padding-top: 1px;
+position: relative; 
+top: 0;
+margin: 0;
+padding: 0;
+padding-top: 6px;
+
+}
+.h{
+  position: relative; 
+top: 0;
+margin: 0;
+
+}
+.resetButton{
+  position:absolute;
+  bottom: 4px;
+  right: 4px;
+}
+  /* Add responsive CSS for the image */
+  .responsive-img {
+            width: 60px;
+         border-radius: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+            position: relative;
+            top: 20px;
+            left: 0px;
+        }
+
+      
+        .container-name {
+
+            margin: 0 auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+            color:white;
+            position: relative;
+            top: 20px;
+   
+      text-align: center;
+       
+            box-sizing: border-box;
+            text-shadow:  0rem 0.1rem 0.1rem rgb(20, 16, 255);
+        }
+.etitt{
+position: absolute;
+bottom: 40px;
+left: 2px;
+}
+
+
+       .hh3{
+        color: #fff;
+        text-align: center;
+        color: rgb(28, 28, 180);
+    width:100%;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgb(212, 212, 236), white 90%);
+       }
+       .hh2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+    text-transform: capitalize;
+    /* background-image: linear-gradient(to right, rgb(212, 212, 236), white 90%); */
+       }
+
+       .cover{
+
+margin-top: 20px;
+
+       }
+       .inerb{
+        box-shadow: 0.1rem 0.1rem 0.1rem rgb(218, 218, 218);
+        margin-left: 20px;
+       
+       }
+       .inerb:hover{
+        box-shadow: 0.1rem 0.2rem 0.2rem rgb(132, 135, 134);
+       }
+       .inerN{
+   width: 86.9px;
+        box-shadow: 0.1rem 0.1rem 0.1rem rgb(218, 218, 218);
+       }
+       .inerN:hover{
+        box-shadow: 0.1rem 0.2rem 0.2rem rgb(148, 154, 152);}
+        .resetButton{
+          box-shadow: 0.1rem 0.1rem 0.1rem rgb(218, 218, 218); 
+        }
+        .resetButton:hover{
+          color: #fff;
+          background-color: #212020;
+        }
+        .Buttonn{
+          box-shadow: 0.1rem 0.1rem 0.1rem rgb(218, 218, 218); 
+          width: 100px;
+          position:absolute;
+ bottom: 4px;
+ left: 2px;
+ 
+        }
+        .Buttonn:hover{
+          color: #fff;
+          background-color: #212020;
+        }
+        .footerr{
+          width: 100%;
+          height: 50px;
+          position: fixed;
+          bottom: 0;
+          background-color: rgb(0, 0, 0);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        color: #fff;
+       
+        }
+        .back{
+          position: fixed;
+          top: 46px;
+          left: 6px;
+          padding: 4px;
+          text-decoration: none;
+        }
+        .back:hover{
+          color: #fff;
+          background-color: #212020;
+        }
+
+       .ik{
+ width: 60%;
+ height: 46px;
+margin-left:-8px;
+margin-right: 8px ;
+border-radius: 10px;
+} 
+.log{
+display: flex;
+position: absolute;
+top: 0;
+left: 16px;
+}
+.h1{
+  margin-top:2px;
+  font-family:"lucida Handwriting";
+  color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+}
+.h{
+  margin-left:90PX ;
+  margin-top: 4px;
+}
+
+    /* Styles for the popup box */
+    .mini-popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            max-width: 300px;
+            text-align: center;
+          
+        }
+
+        /* Styles for the close button */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+         width: 24px;
+         background-color: #161414;
+        color: #fff;
+        }
+        .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 14px;
+    /* margin-bottom: 5px; */
+}
+.footer-icons a:hover {
+    background-color: #3F71EA;
+}      
+</style>
+
+</head>
+<body>
+
+<nav class="navbar">
+  <h3 class="h">SUBSCRIPTIONS</h3>
+</nav>
+
+<div class="log">  
+  <img class="ik" src="ca.PNG" alt="">
+  <h1  class="h1">KAC</h1>
+</div>
+
+<a href="index.html"><button class="back">BACK</button></a>
+
+<div class="bigbos">
+
+ <div> <div id="sidebar">
+
+ <h3 class="logo">Profile</h3>
+
+  <span class="close-btn" onclick="closeNav()">&times;</span>
+  <div>
+    <img id="displayImage" class="responsive-img" src="" alt="Uploaded Image">
+</div>
+
+
+<div class="container-name">
+  
+  <p id="greeting"></p>
+</div>
+
+  <ul>
+
+      <li>
+        <p class="hh2">Your Total Subscriptions: <span id="clickCount">0</span></p>
+      </li>
+  </ul>
+   
+ 
+  
+ 
+  
+   <button id="resetButton" class="resetButton">Clear Data</button>
+    <button id="open-mini-popup" class="Buttonn" >Edit Profile</button>
+  
+
+
+</div>
+
+<span id="openNav" onclick="openNav()">&#9776;</span>
+</div>
+</div>
+
+
+
+ 
+
+
+
+  <div class="container">
+  
+
+    <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+
+     <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+     <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+
+     <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+     <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+     <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+     <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+     <div class="service-box click-button">
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <div class="g-ytsubscribe" data-channelid="UCcunqkCK1Rpllg8v5FWqdrA" data-layout="full" data-count="default"></div>
+     </div>
+
+</div>
+   
+
+    <div class="footerr">
+   <div class="footer-icons">
+    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://chat.whatsapp.com/IIxwXKZNOY3JkvhjucfwU6"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.tiktok.com/@kashifali7599946?_r=1&_d=e60jl69i4h6i11&sec_uid=MS4wLjABAAAA5pqqNDcqqCOR72WfgbM9Kcw8cBdOjvGgrLTfslTqWUcnuSVHEqaji3JBjoDL6DpV&share_author_id=7188823389313598469&sharer_language=en&source=h5_m&u_code=e60jll0l83h2h2&timestamp=1695217519&user_id=7188823389313598469&sec_user_id=MS4wLjABAAAA5pqqNDcqqCOR72WfgbM9Kcw8cBdOjvGgrLTfslTqWUcnuSVHEqaji3JBjoDL6DpV&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7230899748231202565&share_link_id=3efab193-08a1-4c6a-91c8-423bb34084ea&share_app_id=1233&ugbiz_name=Account&ug_btm=b8727%2Cb4907"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/channel/UCcunqkCK1Rpllg8v5FWqdrA"><i class="fa-brands fa-youtube"></i></a>
+ </div>
+</div>
+
+
+
+
+<!-- Mini Popup container -->
+<div id="mini-popup" class="mini-popup-container">
+    <!-- Close button -->
+    <span class="close-button" id="close-mini-popup">&times;</span>
+    <!-- Mini Popup content -->
+    <h2>Edit your profile</h2>
+    <p></p>
+    <div class="cover"><input type="file" id="imageInput" accept="image/*" class="inerN">
+      <button onclick="getAndSaveName()"  class="inerb">Set Your Name</button></div>
+    
+</div>
+
+
+<script>
+  function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+  }
+  
+  function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+  }
+</script>
+
+
+
+
+<script>
+  // Function to increment the click count and update the display
+  function incrementClickCount() {
+    let clickCount = parseInt(localStorage.getItem('clickCount') || 0);
+    clickCount++;
+    localStorage.setItem('clickCount', clickCount);
+    document.getElementById('clickCount').textContent = clickCount;
+  }
+
+  // Function to handle button clicks and disable the button after click
+  function handleClick(event) {
+    if (event.target.classList.contains('click-button')) {
+      const buttonId = event.target.textContent;
+      const buttonClicked = localStorage.getItem(buttonId);
+
+      if (!buttonClicked) {
+        incrementClickCount();
+        localStorage.setItem(buttonId, 'clicked');
+        event.target.disabled = true;
+      }
+    }
+  }
+
+  // Function to reset the click count and enable buttons
+  function resetClicks() {
+    localStorage.clear();
+    const buttons = document.querySelectorAll('.click-button');
+    buttons.forEach(button => {
+      button.disabled = false;
+    });
+    document.getElementById('clickCount').textContent = '0';
+  }
+
+  // Add event listener to handle button clicks
+  document.addEventListener('click', handleClick);
+
+  // On page load, update the display with the stored click count and disable clicked buttons
+  document.addEventListener('DOMContentLoaded', () => {
+    let clickCount = parseInt(localStorage.getItem('clickCount') || 0);
+    document.getElementById('clickCount').textContent = clickCount;
+
+    // Disable buttons that were clicked before
+    const buttons = document.querySelectorAll('.click-button');
+    buttons.forEach(button => {
+      const buttonId = button.textContent;
+      const buttonClicked = localStorage.getItem(buttonId);
+      if (buttonClicked) {
+        button.disabled = true;
+      }
+    });
+  });
+
+  // Add event listener to the reset button
+  document.getElementById('resetButton').addEventListener('click', resetClicks);
+
+  // Enable the reset button after page refresh
+  window.addEventListener('load', () => {
+    document.getElementById('resetButton').disabled = false;
+  });
+</script>
+  <script>
+        // Function to handle file input change
+        document.getElementById('imageInput').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+
+            // Check if a file was selected
+            if (file) {
+                const reader = new FileReader();
+
+                // Define the function to run when the file is loaded
+                reader.onload = function (e) {
+                    const imageElement = document.getElementById('displayImage');
+                    imageElement.src = e.target.result; // Display the image
+
+                    // Save the image data to local storage (you can change the key)
+                    localStorage.setItem('uploadedImage', e.target.result);
+                };
+
+                // Read the file as a data URL
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Check if there's a saved image in local storage and display it
+        const savedImage = localStorage.getItem('uploadedImage');
+        if (savedImage) {
+            document.getElementById('displayImage').src = savedImage;
+        }
+    </script>
+     <script>
+      // JavaScript code to get the user's name with prompt and save it to local storage
+      function getAndSaveName() {
+          const userName = prompt("Please enter your name:");
+          if (userName !== null && userName !== "") {
+              localStorage.setItem("user_name", userName);
+
+              // Display the name on the website
+              document.getElementById("greeting").textContent = `${userName}`;
+          }
+      }
+
+      // Check if the user's name is already saved in local storage
+      const savedName = localStorage.getItem("user_name");
+      if (savedName) {
+          document.getElementById("greeting").textContent = ` ${savedName}`;
+      }
+  </script>
+  
+  <script>
+    // JavaScript to handle opening and closing the mini popup
+    const openMiniPopupButton = document.getElementById('open-mini-popup');
+    const closeMiniPopupButton = document.getElementById('close-mini-popup');
+    const miniPopup = document.getElementById('mini-popup');
+
+    openMiniPopupButton.addEventListener('click', () => {
+        miniPopup.style.display = 'block';
+    });
+
+    closeMiniPopupButton.addEventListener('click', () => {
+        miniPopup.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>
